@@ -21,7 +21,7 @@ public class KeyboardColorizer : MonoBehaviour
         GameManager.onGameStateChanged += GameStateChangedCallback;
     }
 
-    private void nDestroy()
+    private void OnDestroy()
     {
         GameManager.onGameStateChanged -= GameStateChangedCallback;
     }
